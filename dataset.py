@@ -73,9 +73,9 @@ class MyDataset(Dataset):
 
 def getDataLoader(is_train=True, batch_size=50, shuffle=True):
 	if is_train:
-		return DataLoader(dataset=MyDataset(hp.train_txt), batch_size=batch_size, shuffle=shuffle)
+		return DataLoader(dataset=MyDataset(hp.train_txt), batch_size=batch_size, shuffle=shuffle, num_workers=4)
 	else:
-		return DataLoader(dataset=MyDataset(hp.test_txt), batch_size=batch_size, shuffle=shuffle)
+		return DataLoader(dataset=MyDataset(hp.test_txt), batch_size=batch_size, shuffle=shuffle, num_workers=4)
 
 
 if __name__ == "__main__":
