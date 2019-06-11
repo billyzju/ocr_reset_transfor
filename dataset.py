@@ -97,6 +97,6 @@ if __name__ == "__main__":
 			#print(img[0])
 			#cv2.imwrite("1.jpg", img[0].int().permute(1, 2, 0).contiguous().numpy())
 			#print("batch_image.shape:{}, batch_label.shape:{}, bacth_length.shape{}".format(batch_img.shape, batch_label.shape, batch_length.shape))
-			time.sleep(1)
+			time.sleep(2)
 		
 		
